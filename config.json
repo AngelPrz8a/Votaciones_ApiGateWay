@@ -1,0 +1,6 @@
+{
+  "url-backend": "127.0.0.1",
+  "port": 7777,
+  "url-backend-security": "http://127.0.0.1:8082",
+  "url-backend-academic": "http://127.0.0.1:9999"
+}
