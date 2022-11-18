@@ -1,0 +1,1440 @@
+{
+	"info": {
+		"_postman_id": "a3024a30-054c-496a-9dad-043a8ffabaf9",
+		"name": "Proyecto ApiGateWay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18607071"
+	},
+	"item": [
+		{
+			"name": "Table",
+			"item": [
+				{
+					"name": "Index table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODYzNzI0MSwianRpIjoiYjdjNDNlZWUtMmQ1MC00ZDBlLWIxZDUtYmIwYzg0OGU3OGVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlZjcxOWY3NWY3Nzc0NDgxMzdjMTUiLCJuYW1lIjoiQ2F0YWxpbmEiLCJlbWFpbCI6ImthdGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIiLCJyb2xlIjoiNjM2ZWMxYjI0NTVmMTYwZmI5MGNlNzcxIn0sIm5iZiI6MTY2ODYzNzI0MSwiZXhwIjoxNjY4NzIzNjQxfQ.Bax5F5qVzYMHuOQlt-JuHk_CF5cfs_EWzuy70NbccWc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show table",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/table/637476800dd8a2dbc861658d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"table",
+								"637476800dd8a2dbc861658d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tableNumber\": \"8\",\r\n    \"documentsCount\": \"40\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update table",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"637463330dd8a2dbc861658a\",\r\n    \"documentsCount\": \"6\",\r\n    \"tableNumber\": \"23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/table/637463330dd8a2dbc861658a",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"table",
+								"637463330dd8a2dbc861658a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete table",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/table/637476800dd8a2dbc861658d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"table",
+								"637476800dd8a2dbc861658d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Match",
+			"item": [
+				{
+					"name": "Index match",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/match",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"match"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show match",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/match/636ef45bbbb72301aa5ba30d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"match",
+								"636ef45bbbb72301aa5ba30d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create match",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"partido rojo\",\r\n        \"motto\": \"Lema de ejemplo\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/match",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"match"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update match",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"636db2563cdd564dfa5d69bd\",\r\n    \"name\": \"partido verde\",\r\n    \"motto\": \"LEMA EJEMPLO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/match/636db2563cdd564dfa5d69bd",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"match",
+								"636db2563cdd564dfa5d69bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete match",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/match/636eee32bbb72301aa5ba306",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"match",
+								"636eee32bbb72301aa5ba306"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Candidate",
+			"item": [
+				{
+					"name": "Index candidate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/candidate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"candidate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show candidate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/candidate/6374638d0dd8a2dbc861658c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"candidate",
+								"6374638d0dd8a2dbc861658c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create candidate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"resolution\": \"657811223\",\r\n    \"identification\": \"1234212123122556789\",\r\n    \"name\": \"Jose\",\r\n    \"lastname\": \"Jose\",\r\n    \"id_match\": \"637463680dd8a2dbc861658b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/candidate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"candidate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update candidate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"636eee66bbb72301aa5ba307\",\r\n    \"lastname\": \"Benavides\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/candidate/636eee66bbb72301aa5ba307",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"candidate",
+								"636eee66bbb72301aa5ba307"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete candidate",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/candidate/636ef394bbb72301aa5ba30c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"candidate",
+								"636ef394bbb72301aa5ba30c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Citizen",
+			"item": [
+				{
+					"name": "Index citizen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3NjEwOCwianRpIjoiNjgyNTdmYzYtNjhlOC00ZTMxLThkNDctZjQzYmVkOGY2MmFhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NTc2MTA4LCJleHAiOjE2Njg2NjI1MDh9.cvY2eTQDkYtL35rthu8MzkjoczHUlX3PBFOkFNPZE9M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/citizen",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"citizen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show citizen",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/citizen/636eeef9bbb72301aa5ba309",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"citizen",
+								"636eeef9bbb72301aa5ba309"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create citizen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"si\",\r\n    \"lastname\": \"no\",\r\n    \"identification\": \"12345678901234\",\r\n    \"id_table\": \"636ed1dae36b44d41b977a75\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/citizen",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"citizen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update citizen",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"636edeede888368127077735\",\r\n    \"name\": \"Fabian\",\r\n    \"lastname\": \"Benavides\",\r\n    \"id_table\": \"636ed1dae36b44d41b977a75\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/citizen/636edeede888368127077735",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"citizen",
+								"636edeede888368127077735"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete citizen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/citizen/636eeef9bbb72301aa5ba309",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"citizen",
+								"636eeef9bbb72301aa5ba309"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Result",
+			"item": [
+				{
+					"name": "Index result",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODYzNzI0MSwianRpIjoiYjdjNDNlZWUtMmQ1MC00ZDBlLWIxZDUtYmIwYzg0OGU3OGVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlZjcxOWY3NWY3Nzc0NDgxMzdjMTUiLCJuYW1lIjoiQ2F0YWxpbmEiLCJlbWFpbCI6ImthdGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIiLCJyb2xlIjoiNjM2ZWMxYjI0NTVmMTYwZmI5MGNlNzcxIn0sIm5iZiI6MTY2ODYzNzI0MSwiZXhwIjoxNjY4NzIzNjQxfQ.Bax5F5qVzYMHuOQlt-JuHk_CF5cfs_EWzuy70NbccWc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/result",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"result"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show result",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODYzNzI0MSwianRpIjoiYjdjNDNlZWUtMmQ1MC00ZDBlLWIxZDUtYmIwYzg0OGU3OGVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlZjcxOWY3NWY3Nzc0NDgxMzdjMTUiLCJuYW1lIjoiQ2F0YWxpbmEiLCJlbWFpbCI6ImthdGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIiLCJyb2xlIjoiNjM2ZWMxYjI0NTVmMTYwZmI5MGNlNzcxIn0sIm5iZiI6MTY2ODYzNzI0MSwiZXhwIjoxNjY4NzIzNjQxfQ.Bax5F5qVzYMHuOQlt-JuHk_CF5cfs_EWzuy70NbccWc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/result/636f079967a6572a05d06e86",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"result",
+								"636f079967a6572a05d06e86"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create result",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODYzNzI0MSwianRpIjoiYjdjNDNlZWUtMmQ1MC00ZDBlLWIxZDUtYmIwYzg0OGU3OGVjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlZjcxOWY3NWY3Nzc0NDgxMzdjMTUiLCJuYW1lIjoiQ2F0YWxpbmEiLCJlbWFpbCI6ImthdGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIiLCJyb2xlIjoiNjM2ZWMxYjI0NTVmMTYwZmI5MGNlNzcxIn0sIm5iZiI6MTY2ODYzNzI0MSwiZXhwIjoxNjY4NzIzNjQxfQ.Bax5F5qVzYMHuOQlt-JuHk_CF5cfs_EWzuy70NbccWc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countVotes\": 12000,\r\n    \"id_table\": \"636ed1dae36b44d41b977a75\",\r\n    \"id_candidate\": \"636eee66bbb72301aa5ba307\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/result",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"result"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update result",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"636f079967a6572a05d06e86\",\r\n    \"id_table\": \"636ed1e3e36b44d41b977a76\",\r\n    \"id_candidate\": \"636eee66bbb72301aa5ba307\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/result/636f079967a6572a05d06e86",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"result",
+								"636f079967a6572a05d06e86"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete result",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/result/636ef060bbb72301aa5ba30b",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"result",
+								"636ef060bbb72301aa5ba30b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get all usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODc0OTQ2MywianRpIjoiNzY0Yjk3ZjEtMDYxNy00NmI4LThiNTgtMDcxZjQ5OTEwZGQ0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NzQ5NDYzLCJleHAiOjE2Njg4MzU4NjN9.i5NGqok2ltJLxLOrjnqukxVNik3HhzmlUdssjuEBi0c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/636ec1ed6e1b0c5320340926",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"636ec1ed6e1b0c5320340926"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Catalina\",\r\n    \"email\":\"kata@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"role\":\"636ec193455f160fb90ce76f\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\":\"636ec1b2455f160fb90ce771\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/636ef719f75f777448137c15",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"636ef719f75f777448137c15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/636456368bccb016dd70cff3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"636456368bccb016dd70cff3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validacion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODc0OTQ2MywianRpIjoiNzY0Yjk3ZjEtMDYxNy00NmI4LThiNTgtMDcxZjQ5OTEwZGQ0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NzQ5NDYzLCJleHAiOjE2Njg4MzU4NjN9.i5NGqok2ltJLxLOrjnqukxVNik3HhzmlUdssjuEBi0c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"david@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/validation",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"validation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "get all rol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show rol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/role/636ec193455f160fb90ce76f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"role",
+								"636ec193455f160fb90ce76f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permission",
+			"item": [
+				{
+					"name": "get all permiso",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create permiso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"/result/<string:id>\",\r\n    \"method\":\"DELETE\"\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update permiso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"/match/<string:id>\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission/63746cb25496824e7893c2f8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission",
+								"63746cb25496824e7893c2f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete permiso",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission/636ec569633f9c0bd518087c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission",
+								"636ec569633f9c0bd518087c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PermissionRole",
+			"item": [
+				{
+					"name": "get all permisorol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show permisorol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/636abb50671565726e97baa1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"636abb50671565726e97baa1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create permisorol",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permission\":\"63746fc64daa855905794b3d\",\r\n    \"role\":\"636ec1b2455f160fb90ce771\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update permisorol",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permission\":\"636ec2f24592f22fb0f919bc\",\r\n    \"role\":\"636ec1b2455f160fb90ce771\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/636ec3eb633f9c0bd5180876",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"636ec3eb633f9c0bd5180876"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete permisorol",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/63746c105496824e7893c2f1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"63746c105496824e7893c2f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validar permisos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"/match\",\r\n    \"method\":\"GET\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/validate-permission/636ec193455f160fb90ce76f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"validate-permission",
+								"636ec193455f160fb90ce76f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "basico",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODU3MjcxMCwianRpIjoiYTc5NTMzNjEtMWQxYy00ZjUzLTgxM2ItMzRmY2UwMTg5Y2EzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzFiMjQ1NWYxNjBmYjkwY2U3NzEifSwibmJmIjoxNjY4NTcyNzEwLCJleHAiOjE2Njg2NTkxMTB9.ZX0rwSMmZkB--SdRYC1B5ToVD6rTerqyIeNefXHLhPE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:7777",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7777"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"angel@gmail.com\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7777/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7777",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
