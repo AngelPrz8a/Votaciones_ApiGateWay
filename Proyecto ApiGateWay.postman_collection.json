@@ -857,6 +857,526 @@
 			]
 		},
 		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get all usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODc0OTQ2MywianRpIjoiNzY0Yjk3ZjEtMDYxNy00NmI4LThiNTgtMDcxZjQ5OTEwZGQ0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NzQ5NDYzLCJleHAiOjE2Njg4MzU4NjN9.i5NGqok2ltJLxLOrjnqukxVNik3HhzmlUdssjuEBi0c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/636ec1ed6e1b0c5320340926",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"636ec1ed6e1b0c5320340926"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Catalina\",\r\n    \"email\":\"kata@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"role\":\"636ec193455f160fb90ce76f\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\":\"636ec1b2455f160fb90ce771\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/636ef719f75f777448137c15",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"636ef719f75f777448137c15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/636456368bccb016dd70cff3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"636456368bccb016dd70cff3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validacion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODc0OTQ2MywianRpIjoiNzY0Yjk3ZjEtMDYxNy00NmI4LThiNTgtMDcxZjQ5OTEwZGQ0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOiI2MzZlYzFlZDZlMWIwYzUzMjAzNDA5MjYiLCJuYW1lIjoiQ2FybG9zIiwiZW1haWwiOiJhbmdlbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsInJvbGUiOiI2MzZlYzE5MzQ1NWYxNjBmYjkwY2U3NmYifSwibmJmIjoxNjY4NzQ5NDYzLCJleHAiOjE2Njg4MzU4NjN9.i5NGqok2ltJLxLOrjnqukxVNik3HhzmlUdssjuEBi0c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"david@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/user/validation",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"user",
+								"validation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "get all rol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show rol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/role/636ec193455f160fb90ce76f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"role",
+								"636ec193455f160fb90ce76f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permission",
+			"item": [
+				{
+					"name": "get all permiso",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create permiso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"/result/<string:id>\",\r\n    \"method\":\"DELETE\"\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update permiso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"/match/<string:id>\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission/63746cb25496824e7893c2f8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission",
+								"63746cb25496824e7893c2f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete permiso",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permission/636ec569633f9c0bd518087c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permission",
+								"636ec569633f9c0bd518087c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PermissionRole",
+			"item": [
+				{
+					"name": "get all permisorol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show permisorol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/636abb50671565726e97baa1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"636abb50671565726e97baa1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create permisorol",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permission\":\"63746fc64daa855905794b3d\",\r\n    \"role\":\"636ec1b2455f160fb90ce771\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update permisorol",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permission\":\"636ec2f24592f22fb0f919bc\",\r\n    \"role\":\"636ec1b2455f160fb90ce771\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/636ec3eb633f9c0bd5180876",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"636ec3eb633f9c0bd5180876"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete permisorol",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/63746c105496824e7893c2f1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"63746c105496824e7893c2f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validar permisos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\":\"/match\",\r\n    \"method\":\"GET\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7777/permissionrole/validate-permission/636ec193455f160fb90ce76f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7777",
+							"path": [
+								"permissionrole",
+								"validate-permission",
+								"636ec193455f160fb90ce76f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "basico",
 			"request": {
 				"auth": {
@@ -892,7 +1412,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"kata@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"raw": "{\r\n    \"email\":\"angel@gmail.com\",\r\n    \"password\":\"123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
