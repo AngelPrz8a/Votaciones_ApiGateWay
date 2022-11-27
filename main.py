@@ -38,7 +38,7 @@ def createToken():
         user = response.json()
         expires = datetime.timedelta(seconds=60 * 60 * 24)
         accesToken = create_access_token(identity=user, expires_delta=expires)
-        return jsonify({"token": accesToken, "userId": user["_id"]})
+        return jsonify({"token": accesToken, "_id": user["_id"]})
     else:
         return jsonify({"msg": "Usuario o contraseña incorrectos"}), 401
 
@@ -48,8 +48,8 @@ def beforeRequestCallback():
     endPoint = limpiarUrl(request.path)
     #endPoint = request.path
     excludeRoutes = ["/login"]
-    if excludeRoutes.__contains__(request.path):
-        print("ruta excluida", request.path)
+    if excludeRoutes.__contains__(request.path) or request.method.upper()=="OPTIONS":
+        #print("ruta excluida", request.path)
         pass
     else:
         if verify_jwt_in_request():
@@ -75,7 +75,7 @@ def validarPermiso(endPoint, metodo, idRol):
     #print("url=",endPoint,str(idRol),"body=",body)
     # print("url",url,"rol = 636d72f9b93192603786a5ca =",idRol)#http://127.0.0.1:8082/permisorol/validar-permisos/636d72f9b93192603786a5ca
     response = requests.post(url, json=body, headers=headers)
-    #print("response=",response.json())
+    print("response=",response.json())
     try:
         data = response.json()
         if ("_id" in data):
